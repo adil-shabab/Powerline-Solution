@@ -22,11 +22,11 @@ window.onload=()=>{
           onUpdate:()=>{ if (gsap.getProperty('#cursorClose','opacity')==1) closeDetail() }, //close detail view on scroll
           scrollTrigger:{
           trigger: '#scrollDist',
-          // start: 'top top',
-          // end: 'bottom bottom',
+          start: 'top top',
+          end: 'bottom bottom',
           scrub: 1
         }})
-        .fromTo('#txt1', {scale:0.6, transformOrigin:'50%'}, {scale:2, ease:'power1.in'}, 0)
+        .fromTo('#txt1', {scale:0.6, transformOrigin:'50%'}, {scale:2, ease:'power1.in'}, 5)
         .to('#txt1 path', {duration:0.3, drawSVG:0, stagger:0.05, ease:'power1.in'}, 0)
         .fromTo('.imgBox', {z:-5000}, {z:350, stagger:-0.3, ease:'none'}, 0.3)
         .fromTo('.imgBox p', {scale:3}, {scale:1.15, stagger:-0.3, ease:'none'}, 0.3)      
