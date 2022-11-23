@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger)
-window.onload=()=>{
-  
+
     gsap.set('#scrollDist', {
       width: '100%',
       height: gsap.getProperty('#app', 'height'), // apply the height of the image stack
@@ -26,8 +25,8 @@ window.onload=()=>{
           end: 'bottom bottom',
           scrub: 1
         }})
-        .fromTo('#txt1', {scale:0.6, transformOrigin:'50%'}, {scale:2, ease:'power1.in'}, 5)
-        .to('#txt1 path', {duration:0.3, drawSVG:0, stagger:0.05, ease:'power1.in'}, 0)
+        // .fromTo('#txt1', {scale:0.6, transformOrigin:'50%'}, {scale:2, ease:'power1.in'}, 5)
+        // .to('#txt1 path', {duration:0.3, drawSVG:0, stagger:0.05, ease:'power1.in'}, 0)
         .fromTo('.imgBox', {z:-5000}, {z:350, stagger:-0.3, ease:'none'}, 0.3)
         .fromTo('.imgBox p', {scale:3}, {scale:1.15, stagger:-0.3, ease:'none'}, 0.3)      
         .to('.imgBox', {duration:5, pointerEvents:'auto', stagger:-0.3}, 0.5)
@@ -35,8 +34,8 @@ window.onload=()=>{
         .to('.imgBox p', {duration:0.1, opacity:0, stagger:-0.3, ease:'expo.inOut'}, 1.2)      
         .to('.imgBox', {duration:0, pointerEvents:'none', stagger:-0.3}, 1.27)
         .add('end')
-        .fromTo('#txt2', {scale:0.1, transformOrigin:'50%'},{scale:0.6, ease:'power3'}, 'end-=0.2')
-        .from('#txt2 path', {duration:0.4, drawSVG:0, ease:'sine.inOut', stagger:0.15}, 'end-=0.2')      
+        // .fromTo('#txt2', {scale:0.1, transformOrigin:'50%'},{scale:0.6, ease:'power3'}, 'end-=0.2')
+        // .from('#txt2 path', {duration:0.4, drawSVG:0, ease:'sine.inOut', stagger:0.15}, 'end-=0.2')      
               
         // intro animation
         gsap.from(window, {duration:1.4, scrollTo:gsap.getProperty('#scrollDist','height')/3, ease:'power2.in'});
@@ -58,8 +57,6 @@ window.onload=()=>{
           xPercent:-50,
           yPercent:-50,
           width: '60%',
-          // perspective:500,
-          // height: '50vh',
         })
   
       t.onmouseover =()=> gsap.to('#cursorCircle', {duration:0.2, attr:{r:30, 'stroke-width':4}})
@@ -124,4 +121,3 @@ window.onload=()=>{
         cursorY(e.clientY)
       }
     }
-  }
