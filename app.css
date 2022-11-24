@@ -1,0 +1,44 @@
+body{
+    overflow-x: hidden;
+}
+.panel_parent{
+    min-height: 100vh;
+    width: 100%;
+    /* background: gray; */
+}
+.panel_parent_second{
+    min-height: 100vh;
+    width: 100%;
+    /* background: rgb(215, 155, 155); */
+}
+.panel{
+    /* opacity: 0; */
+    width: 200px;
+    opacity: 0;
+    height: 200px;
+    background: green;
+    transform: scale(0.2);
+    transition: 0.5s;
+}
+.panel.active{
+    opacity: 1;
+}
+.second-panel{
+    /* opacity: 0; */
+    width: 200px;
+    opacity: 0;
+    height: 200px;
+    background: green;
+    transform: scale(0.2);
+    transition: 0.5s;
+}
+.second-panel.active{
+    opacity: 1;
+}
+
+.hello{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

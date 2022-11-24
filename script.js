@@ -23,6 +23,8 @@ gsap.registerPlugin(ScrollTrigger)
           trigger: '#scrollDist',
           start: 'top top',
           end: 'bottom bottom',
+          markers: true,
+          duration:11,
           scrub: 1
         }})
         // .fromTo('#txt1', {scale:0.6, transformOrigin:'50%'}, {scale:2, ease:'power1.in'}, 5)
