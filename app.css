@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&display=swap');
 body{
     overflow-x: hidden;
+    background: #000;
+    color: white;
+    font-family: 'Eczar', serif;
+    font-size: 13px;
+    text-align: justify;
 }
 .panel_parent{
     min-height: 100vh;
@@ -16,8 +22,6 @@ body{
     width: 200px;
     opacity: 0;
     height: 200px;
-    background: green;
-    transform: scale(0.2);
     transition: 0.5s;
 }
 .panel.active{
@@ -28,7 +32,7 @@ body{
     width: 200px;
     opacity: 0;
     height: 200px;
-    background: green;
+    /* background: green; */
     transform: scale(0.2);
     transition: 0.5s;
 }

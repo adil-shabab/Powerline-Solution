@@ -15,7 +15,12 @@ panel_one.forEach(box => {
             start: "top 65%", 
             end: "top 2%", 
             scrub: 0,
-            toggleClass: {targets: box, className: 'active'}
+            toggleClass: {targets: box, className: 'active'},
+            ease: "power2",
+            stagger: {
+              each: 0.02,
+              from: "random"
+            }
         }
     })
     
@@ -29,7 +34,7 @@ panel_one.forEach(box => {
       .to(box, {x: 200, duration: 3})
       .to(box, {x: 600, duration: 3})
       .to(box, {x: 1400, duration: 3})
-      .to(box, {y: -380, duration: 5})
+      .to(box, {y: -20, duration: 5})
 
 })    
 
@@ -44,8 +49,15 @@ panel_two.forEach(box => {
         markers: true,
         start: "top 65%", 
         end: "top 2%", 
+        ease: "power4.inOut",
+        duration: 0.55,
         scrub: 0,
-        toggleClass: {targets: box, className: 'active'}
+        toggleClass: {targets: box, className: 'active'},
+        ease: "power2",
+        stagger: {
+          each: 0.02,
+          from: "random"
+        }
     }
 })
 
@@ -59,6 +71,6 @@ tl2.to(box, {scale: 0.4, duration: 5})
   .to(box, {x: -200, duration: 3})
   .to(box, {x: -600, duration: 3})
   .to(box, {x: -1400, duration: 3})
-  .to(box, {y: -380, duration: 5})
+  .to(box, {y: -20, duration: 5})
 
 })
