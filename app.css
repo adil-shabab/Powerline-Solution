@@ -52,7 +52,7 @@ h3{
 .single-page .first-div{
     width: 51%;
     height: 100vh;
-    transition: 0.5s;
+    transition: 0.9s;
     position: fixed;
     top: 0;
     left: -100%;
@@ -61,11 +61,14 @@ h3{
 .single-page .second-div{
     width: 50%;
     height: 100vh;
-    transition: 0.5s;
+    transition: 0.9s;
     position: fixed;
     top: 0;
     right: -100%;
+    padding: 100px;
     background: white;
+    flex-direction: column;
+    color: black;
 }
 .single-page .first-div.active{
     left: 0;
@@ -114,4 +117,15 @@ h3{
     opacity: 0;
     transition: 0.1s;
   }
+  
+
+
+
+
+
+
+
+
+
+
   

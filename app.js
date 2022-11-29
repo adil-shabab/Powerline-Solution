@@ -4,8 +4,20 @@
 let hello = document.querySelectorAll('.hello')
 for (let i = 0; i < hello.length; i++) {
   hello[i].addEventListener("click", function() {
+    img = hello[i].querySelector('.img').src
     document.querySelector('.first-div').classList.add('active')
     document.querySelector('.second-div').classList.add('active')
+    let image = document.createElement('img')
+    image.setAttribute('src', img)
+    image.classList.add('img-fluid')
+    let h1 = document.createElement('h1')
+    h1.innerHTML = hello[i].querySelector('h3').innerHTML
+    let p = document.createElement('p')
+    p.innerHTML = hello[i].querySelector('p').innerHTML
+    // image.classList.add('img-fluid')
+    document.querySelector('.first-div').appendChild(image)
+    document.querySelector('.second-div').appendChild(h1)
+    document.querySelector('.second-div').appendChild(p)
   });
 }
 
@@ -17,6 +29,8 @@ for (let i = 0; i < hello.length; i++) {
 document.querySelector('.single-page').addEventListener('click', function(){
   document.querySelector('.first-div').classList.remove('active')
   document.querySelector('.second-div').classList.remove('active')
+  document.querySelector('.first-div').replaceChildren();
+  document.querySelector('.second-div').replaceChildren();
 })
 gsap.registerPlugin(ScrollTrigger)
 gsap.defaults({ease: "none", duration: 2});
@@ -113,6 +127,7 @@ tl2.to(box, {scale: 0.4, duration: 5})
 
 
 
+
 let cursor = document.querySelector(".cursor");
 let cursorScale = document.querySelectorAll(".cursor-scale");
 let mouseX = 0;
@@ -145,12 +160,3 @@ cursorScale.forEach((link) => {
   });
 });
 
-nope.forEach((link) => {
-  link.addEventListener("mousemove", () => {
-    cursor.classList.add("gone");
-  });
-
-  link.addEventListener("mouseleave", () => {
-    cursor.classList.remove("gone");
-  });
-});
