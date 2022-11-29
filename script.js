@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger)
+gsap.defaults({ease: "none", duration: 2});
+
 
     gsap.set('#scrollDist', {
       width: '100%',

@@ -5,7 +5,12 @@ body{
     color: white;
     font-family: 'Eczar', serif;
     font-size: 13px;
-    text-align: justify;
+}
+h3{
+    background-color: #f4d03f;
+    background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .panel_parent{
     min-height: 100vh;
@@ -19,9 +24,9 @@ body{
 }
 .panel{
     /* opacity: 0; */
-    width: 200px;
-    opacity: 0;
-    height: 200px;
+    width: 250px;
+    opacity: 1;
+    height: 100px;
     transition: 0.5s;
 }
 .panel.active{
@@ -29,20 +34,84 @@ body{
 }
 .second-panel{
     /* opacity: 0; */
-    width: 200px;
-    opacity: 0;
-    height: 200px;
+    width: 250px;
+    opacity: 1;
+    height: 100px;
     /* background: green; */
-    transform: scale(0.2);
     transition: 0.5s;
 }
-.second-panel.active{
-    opacity: 1;
-}
-
 .hello{
     min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+
+.single-page .first-div{
+    width: 51%;
+    height: 100vh;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: white;
+}
+.single-page .second-div{
+    width: 50%;
+    height: 100vh;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: white;
+}
+.single-page .first-div.active{
+    left: 0;
+}
+.single-page .second-div.active{
+    right: 0;
+}
+.first-hello{
+    rotate: 13deg;
+}
+.second-hello{
+    rotate: -13deg;
+}
+
+
+
+
+
+
+
+
+
+
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #800000;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+  }
+  .grow {
+    transform: scale(4);
+    background: white;
+    mix-blend-mode: difference;
+    border: none;
+  }
+  .grow-small {
+    transform: scale(2);
+  }
+  .gone {
+    opacity: 0;
+    transition: 0.1s;
+  }
+  

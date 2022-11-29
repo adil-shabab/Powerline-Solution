@@ -1,5 +1,25 @@
-gsap.registerPlugin(ScrollTrigger)
 
+
+
+let hello = document.querySelectorAll('.hello')
+for (let i = 0; i < hello.length; i++) {
+  hello[i].addEventListener("click", function() {
+    document.querySelector('.first-div').classList.add('active')
+    document.querySelector('.second-div').classList.add('active')
+  });
+}
+
+
+
+
+
+
+document.querySelector('.single-page').addEventListener('click', function(){
+  document.querySelector('.first-div').classList.remove('active')
+  document.querySelector('.second-div').classList.remove('active')
+})
+gsap.registerPlugin(ScrollTrigger)
+gsap.defaults({ease: "none", duration: 2});
 
 
 panel_one = gsap.utils.toArray('.panel')
@@ -15,7 +35,7 @@ panel_one.forEach(box => {
             start: "top 65%", 
             end: "top 2%", 
             scrub: 0,
-            toggleClass: {targets: box, className: 'active'},
+            
             ease: "power2",
             stagger: {
               each: 0.02,
@@ -27,17 +47,18 @@ panel_one.forEach(box => {
     tl.to(box, {scale: 0.4, duration: 5})
     .to(box, {scale: 1.2, duration: 5})
     .to(box, {scale: 1.4, duration: 5})
-    .to(box, {y: 150, duration: 3})
+    // .to(box, {y: 150, duration: 3})
     .to(box, {scale: 2.2, duration: 5})
     .to(box, {scale: 2.8, duration: 5})
     .to(box, {scale: 3.2, duration: 5})
-      .to(box, {x: 200, duration: 3})
-      .to(box, {x: 600, duration: 3})
-      .to(box, {x: 1400, duration: 3})
-      .to(box, {y: -20, duration: 5})
-
+      .to(box, {x: 400, duration: 3})
+      // .to(box, {x: 600, duration: 3})
+      // .to(box, {x: 900, duration: 3})
+      .to(box, {y: -250, duration: 3})
+      // .to(box, {x: 600, duration: 3})
+      // .to(box, {x: 1400, duration: 3})
+      // .to(box, {y: -20, duration: 5})
 })    
-
 
 
 
@@ -47,12 +68,12 @@ panel_two.forEach(box => {
     scrollTrigger: {
         trigger: box,
         markers: true,
-        start: "top 65%", 
+        start: "top 100%", 
         end: "top 2%", 
         ease: "power4.inOut",
         duration: 0.55,
         scrub: 0,
-        toggleClass: {targets: box, className: 'active'},
+        
         ease: "power2",
         stagger: {
           each: 0.02,
@@ -64,13 +85,72 @@ panel_two.forEach(box => {
 tl2.to(box, {scale: 0.4, duration: 5})
 .to(box, {scale: 1.2, duration: 5})
 .to(box, {scale: 1.4, duration: 5})
-.to(box, {y: 150, duration: 3})
+// .to(box, {y: 150, duration: 3})
 .to(box, {scale: 2.2, duration: 5})
 .to(box, {scale: 2.8, duration: 5})
 .to(box, {scale: 3.2, duration: 5})
-  .to(box, {x: -200, duration: 3})
-  .to(box, {x: -600, duration: 3})
-  .to(box, {x: -1400, duration: 3})
-  .to(box, {y: -20, duration: 5})
+.to(box, {x: -400, duration: 3})
+// .to(box, {x: -600, duration: 3})
+// .to(box, {x: -900, duration: 3})
+.to(box, {y: -150, duration: 3})
+  // .to(box, {x: -200, duration: 3})
+  // .to(box, {x: -600, duration: 3})
+  // .to(box, {x: -1400, duration: 3})
+  // .to(box, {y: -20, duration: 5})
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let cursor = document.querySelector(".cursor");
+let cursorScale = document.querySelectorAll(".cursor-scale");
+let mouseX = 0;
+let mouseY = 0;
+
+gsap.to({}, 0.01, {
+  repeat: -1,
+  onRepeat: function () {
+    gsap.set(cursor, {
+      css: {
+        left: mouseX,
+        top: mouseY
+      }
+    });
+  }
+});
+
+window.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+cursorScale.forEach((link) => {
+  link.addEventListener("mousemove", () => {
+    cursor.classList.add("grow");
+  });
+
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("grow");
+  });
+});
+
+nope.forEach((link) => {
+  link.addEventListener("mousemove", () => {
+    cursor.classList.add("gone");
+  });
+
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("gone");
+  });
+});
