@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&display=swap');
 body{
     overflow-x: hidden;
-    background: rgb(3,62,134);
-    background: radial-gradient(circle, rgba(3,62,134,1) 13%, rgba(0,11,115,1) 65%);
+    /* background: rgb(3,62,134); */
+    /* background: radial-gradient(circle, rgba(3,62,134,1) 13%, rgba(0,11,115,1) 65%); */
     color: white;
     font-family: 'Eczar', serif;
     font-size: 13px;
 }
+.panel_parent{
+    padding-top: 120px;
+    position: relative;
+    background: url('../img/map.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.panel_parent .logo{
+    width: 125px;
+    left: 4%;
+    top: 5%;
+    position: absolute;
+}
 h1.main_head{
-    margin-top: 120px;
     text-align: center;
 }
 p.main_para{
