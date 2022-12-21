@@ -3,6 +3,7 @@ body{
     overflow-x: hidden;
     color: white;
     font-family: 'Poppins', sans-serif;    
+    background: #01013f;
 }
 .panel_parent{
     padding-top: 100px;
@@ -54,25 +55,47 @@ h3.side_head{
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -115%;
+    /* margin-top: -115%; */
 }
 .second-panel{
     width: 250px;
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -115%;
+    /* margin-top: -115%; */
 }
 .hello{
     min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #01013f;
 }
 #hello{
-    min-height: 125vh;
+    min-height: 1vh;
 }
 p{
     font-size: 10px;
+}
+
+.bottom__div{
+    min-height: 15vh;
+}
+.footer__section{
+    width: 100%;
+    padding: 20px 0px;
+    margin-top: 40px;
+}
+.copy_txt{
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+.copy_txt a{
+    text-decoration: none;
+    color: white;
+}
+.copy_txt a:hover{
+    text-decoration: none;
+    color: white;
 }
