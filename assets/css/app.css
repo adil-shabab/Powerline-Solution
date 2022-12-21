@@ -6,13 +6,18 @@ body{
     background: #01013f;
 }
 .panel_parent{
-    padding-top: 100px;
     position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.bg_parent{
     background: url('../img/maps.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
 .panel_parent .logo{
     width: 125px;
@@ -106,10 +111,44 @@ p{
     top: 0;
     padding: 15px 0px;
     transition: 0.4s;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
 }
 .h1__tag.active{
     opacity: 1;
 }
 .space{
     min-height: 8vh;
+}
+
+@media screen and (max-width: 700px) {
+    .panel_parent{
+        height: 75vh;
+    }
+    .panel_parent .bg_parent{
+        background-size: contain;
+        background-position: center;
+        transform: translate(0px, 26%);
+    }
+    .panel_parent .logo{
+        width: 65px;
+        left: 6%;
+        top: 2%;
+    }
+    h1.main_head{
+        font-size: 28px;
+        margin-bottom: 30px;
+        margin-top: 18%;
+    }
+    p.main_para{
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 29px;
+    }
+    .country_name{
+        padding: 10px 10px;
+        font-size: 16px;
+        font-weight: normal;
+    }
 }
