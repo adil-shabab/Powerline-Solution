@@ -114,6 +114,7 @@ p{
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 300;
+    z-index: 111;
 }
 .h1__tag.active{
     opacity: 1;
@@ -152,3 +153,45 @@ p{
         font-weight: normal;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    transition: 0.3s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+  }
+  .grow {
+    transform: scale(2.5);
+    background: white;
+    mix-blend-mode: difference;
+    border: none;
+  }
+  .grow-small {
+    transform: scale(2);
+  }
+  .gone {
+    opacity: 0;
+    transition: 0.1s;
+  }
+  
+
+
+
