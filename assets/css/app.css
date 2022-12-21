@@ -65,7 +65,7 @@ h3.side_head{
     /* margin-top: -115%; */
 }
 .hello{
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;

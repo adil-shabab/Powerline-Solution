@@ -7,9 +7,9 @@ panel_one.forEach(box => {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: box,
-            // markers: true,
-            start: "top 85%", 
-            end: "top 2%", 
+            markers: true,
+            start: "top 68%", 
+            end: "top 1%", 
             scrub: 0,
             
             ease: "power2",
@@ -32,9 +32,9 @@ panel_two.forEach(box => {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: box,
-            // markers: true,
-            start: "top 85%", 
-            end: "top 2%",
+            markers: true,
+            start: "top 68%", 
+            end: "top 1%",
             scrub: 0,
             
             ease: "power2",
