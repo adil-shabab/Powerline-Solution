@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 body{
     overflow-x: hidden;
     /* background: rgb(3,62,134); */
     /* background: radial-gradient(circle, rgba(3,62,134,1) 13%, rgba(0,11,115,1) 65%); */
     color: white;
-    font-family: 'Eczar', serif;
+    font-family: 'Poppins', sans-serif;    
     font-size: 13px;
 
 }
@@ -25,10 +25,12 @@ body{
 }
 h1.main_head{
     text-align: center;
+    font-size: 33px;
+    margin-bottom: 15px;
 }
 p.main_para{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 80px;
     width: 50%;
     margin: auto;
@@ -36,12 +38,13 @@ p.main_para{
 h3.side_head{
     background-color: #f4d03f;
     background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+    font-size: 20px;
     -webkit-background-clip: text;
     color: transparent;
 }
 .country_name{
     padding: 10px 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: #218dd1;
 }
@@ -55,20 +58,25 @@ h3.side_head{
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -65%;
+    margin-top: -85%;
 }
 .second-panel{
     width: 250px;
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -65%;
+    margin-top: -85%;
 }
 .hello{
     min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(9,45,89);
-    background: radial-gradient(circle, rgba(9,45,89,1) 0%, rgba(2,6,66,1) 42%);
+    background: #01013f;
+}
+#hello{
+    min-height: 125vh;
+}
+p{
+    font-size: 11px;
 }
