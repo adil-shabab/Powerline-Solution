@@ -6,13 +6,16 @@ body{
     color: white;
     font-family: 'Eczar', serif;
     font-size: 13px;
+
 }
 .panel_parent{
-    padding-top: 120px;
+    padding-top: 100px;
     position: relative;
-    background: url('../img/map.png');
+    background: url('../img/maps.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 .panel_parent .logo{
     width: 125px;
@@ -42,34 +45,30 @@ h3.side_head{
     font-weight: 600;
     color: #218dd1;
 }
-.panel_parent{
-    min-height: 150vh;
-    width: 100%;
-    /* background: gray; */
-}
+
 .panel_parent_second{
     min-height: 100vh;
     width: 100%;
-    /* background: rgb(215, 155, 155); */
 }
 .panel{
-    /* opacity: 0; */
     width: 250px;
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -60%;
+    margin-top: -65%;
 }
 .second-panel{
     width: 250px;
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -60%;
+    margin-top: -65%;
 }
 .hello{
     min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(9,45,89);
+    background: radial-gradient(circle, rgba(9,45,89,1) 0%, rgba(2,6,66,1) 42%);
 }
