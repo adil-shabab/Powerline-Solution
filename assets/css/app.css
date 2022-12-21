@@ -54,14 +54,14 @@ h3.side_head{
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -85%;
+    margin-top: -115%;
 }
 .second-panel{
     width: 250px;
     opacity: 0;
     scale: 0.1;
     height: 150px;
-    margin-top: -85%;
+    margin-top: -115%;
 }
 .hello{
     min-height: 60vh;
@@ -74,5 +74,5 @@ h3.side_head{
     min-height: 125vh;
 }
 p{
-    font-size: 11px;
+    font-size: 10px;
 }
