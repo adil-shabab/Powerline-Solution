@@ -99,3 +99,17 @@ p{
     text-decoration: none;
     color: white;
 }
+
+.h1__tag{
+    opacity: 0;
+    position: sticky;
+    top: 0;
+    padding: 15px 0px;
+    transition: 0.4s;
+}
+.h1__tag.active{
+    opacity: 1;
+}
+.space{
+    min-height: 8vh;
+}
