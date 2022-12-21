@@ -8,7 +8,7 @@ panel_one.forEach(box => {
         scrollTrigger: {
             trigger: box,
             // markers: true,
-            start: "top 68%", 
+            start: "top 70%", 
             end: "top 1%", 
             scrub: 0,
             
@@ -33,7 +33,7 @@ panel_two.forEach(box => {
         scrollTrigger: {
             trigger: box,
             // markers: true,
-            start: "top 68%", 
+            start: "top 70%", 
             end: "top 1%",
             scrub: 0,
             
