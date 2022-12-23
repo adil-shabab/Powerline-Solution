@@ -14,7 +14,7 @@ let h1_tag = document.querySelector('.h1__tag')
 const tl5 = gsap.timeline({
   scrollTrigger:{
     trigger: h1_tag,
-    start: "top 40%", 
+    start: "top 55%", 
     end: "top 1%", 
     scrub: 0,
     // pin:true,
