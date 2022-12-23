@@ -122,6 +122,22 @@ p{
     font-family: 'Raleway', sans-serif;
     z-index: 111;
 }
+.h1___tag{
+    opacity: 0;
+    /* position: sticky;
+    top: 0; */
+    padding: 15px 0px;
+    transition: 0.4s;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    /* font-family: 'Amatic SC', cursive;; */
+    /* font-family: 'DM Serif Display', serif; */
+    /* font-family: 'Monoton', cursive; */
+    /* font-family: 'Playfair Display SC', serif; */
+    font-family: 'Raleway', sans-serif;
+    z-index: 111;
+}
 .h1__parent{
     min-height: 50vh;
     overflow: hidden;
@@ -130,10 +146,10 @@ p{
     opacity: 1;
 }
 .space{
-    min-height: 8vh;
+    min-height: 12vh;
 }
 .space_two{
-    min-height: 24vh;
+    min-height: 34vh;
 }
 
 @media screen and (max-width: 700px) {

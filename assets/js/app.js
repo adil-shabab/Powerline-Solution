@@ -9,23 +9,60 @@
 //     }
 //   });
 
-let h1_tag = document.querySelector('.h1__tag')
-
-const tl5 = gsap.timeline({
+let h1_parent = document.querySelector('.h1_parent')
+const tl7 = gsap.timeline({
   scrollTrigger:{
-    trigger: h1_tag,
-    start: "top 55%", 
+    trigger: h1_parent,
+    start: "top 45%", 
     end: "top 1%", 
     scrub: 0,
     // pin:true,
-    // markers:true,
+    markers:true,
     
     ease: "power2",
   },
 })
-gsap.set(['.h1__tag'], {opacity: 0})
-tl5.to(h1_tag, { opacity: 1, scale:4})
-tl5.to(h1_tag, { duration: 0.5,scale:10, opacity:0})
+gsap.set(['.h1_parent'], {scale: 1.8})
+tl7.to(['.h1_parent'], { scale: 4, })
+tl7.to(['.h1_parent'], { duration: 0.5,scale:4.8})
+tl7.to(['.h1_parent'], { duration: 0.5,scale:7.5})
+
+
+
+let h1_tag = document.querySelector('.h1__tag')
+const tl5 = gsap.timeline({
+  scrollTrigger:{
+    trigger: h1_tag,
+    start: "top 85%", 
+    end: "top 1%", 
+    scrub: 0,
+    // pin:true,
+    markers:true,
+    
+    ease: "power2",
+  },
+})
+gsap.set(['.h1__tag'], {opacity: 0, x:-1200, scale: 1.3})
+tl5.to(h1_tag, { opacity: 1, x:5})
+tl5.to(h1_tag, { duration: 0.5,opacity:0})
+
+let h1__tag = document.querySelector('.h1___tag')
+
+const tl6 = gsap.timeline({
+  scrollTrigger:{
+    trigger: h1__tag,
+    start: "top 85%", 
+    end: "top 1%", 
+    scrub: 0,
+    // pin:true,
+    markers:true,
+    
+    ease: "power2",
+  },
+})
+gsap.set(['.h1___tag'], {opacity: 0, x:1200, scale: 1.3})
+tl6.to(h1__tag, { opacity: 1, x:5})
+tl6.to(h1__tag, { duration: 0.5,opacity:0})
 
 
 
