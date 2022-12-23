@@ -13,7 +13,7 @@ let h1_parent = document.querySelector('.h1_parent')
 const tl7 = gsap.timeline({
   scrollTrigger:{
     trigger: h1_parent,
-    start: "top 45%", 
+    start: "top 50%", 
     end: "top 1%", 
     scrub: 0,
     // pin:true,
@@ -25,7 +25,7 @@ const tl7 = gsap.timeline({
 gsap.set(['.h1_parent'], {scale: 1.5})
 tl7.to(['.h1_parent'], { scale: 4, })
 tl7.to(['.h1_parent'], { duration: 0.5,scale:3.8})
-tl7.to(['.h1_parent'], { duration: 0.5,scale:7})
+tl7.to(['.h1_parent'], { duration: 0.5,scale:7,opacity:0})
 
 
 
@@ -34,7 +34,7 @@ const tl5 = gsap.timeline({
   scrollTrigger:{
     trigger: h1_tag,
     start: "top 85%", 
-    end: "top 1%", 
+    end: "top 50%", 
     scrub: 0,
     // pin:true,
     markers:true,
@@ -42,9 +42,9 @@ const tl5 = gsap.timeline({
     ease: "power2",
   },
 })
-gsap.set(['.h1__tag'], {opacity: 0, x:-1200, scale: 1.3})
-tl5.to(h1_tag, { opacity: 1, x:5})
-tl5.to(h1_tag, { duration: 0.5,opacity:0})
+gsap.set(['.h1__tag'], {opacity: 0, x:-800, scale: 1.3})
+tl5.to(h1_tag, { opacity: 1, x:0})
+tl5.to(h1_tag, { duration: 0.5})
 
 let h1__tag = document.querySelector('.h1___tag')
 
@@ -52,7 +52,7 @@ const tl6 = gsap.timeline({
   scrollTrigger:{
     trigger: h1__tag,
     start: "top 85%", 
-    end: "top 1%", 
+    end: "top 50%", 
     scrub: 0,
     // pin:true,
     markers:true,
@@ -60,9 +60,9 @@ const tl6 = gsap.timeline({
     ease: "power2",
   },
 })
-gsap.set(['.h1___tag'], {opacity: 0, x:1200, scale: 1.3})
-tl6.to(h1__tag, { opacity: 1, x:5})
-tl6.to(h1__tag, { duration: 0.5,opacity:0})
+gsap.set(['.h1___tag'], {opacity: 0, x:800, scale: 1.3})
+tl6.to(h1__tag, { opacity: 1, x:0})
+tl6.to(h1__tag, { duration: 0.5})
 
 
 
