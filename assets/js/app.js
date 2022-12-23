@@ -22,10 +22,10 @@ const tl7 = gsap.timeline({
     ease: "power2",
   },
 })
-gsap.set(['.h1_parent'], {scale: 1.5})
+gsap.set(['.h1_parent'], {scale: 1.3})
 tl7.to(['.h1_parent'], { scale: 4, })
-tl7.to(['.h1_parent'], { duration: 0.5,scale:3.8})
-tl7.to(['.h1_parent'], { duration: 0.5,scale:7,opacity:0})
+tl7.to(['.h1_parent'], { scale:6})
+tl7.to(['.h1_parent'], { opacity:0})
 
 
 
