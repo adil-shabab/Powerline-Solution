@@ -14,18 +14,18 @@ let h1_tag = document.querySelector('.h1__tag')
 const tl5 = gsap.timeline({
   scrollTrigger:{
     trigger: h1_tag,
-    start: "top 50%", 
+    start: "top 40%", 
     end: "top 1%", 
     scrub: 0,
-    pin:true,
+    // pin:true,
     markers:true,
     
     ease: "power2",
   },
 })
-gsap.set(['.h1__tag'], {opacity: 0})
-tl5.to(h1_tag, { opacity: 1, scale: 2.5})
-tl5.to(h1_tag, { duration: 0.5, opacity:0, scale: 10})
+gsap.set(['.h1__tag'], {opacity: 0,})
+tl5.to(h1_tag, { opacity: 1, scale:4})
+tl5.to(h1_tag, { duration: 0.5,scale:10, opacity:0})
 
 
 
@@ -61,7 +61,7 @@ panel_two.forEach(box => {
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: box,
-            // markers: true,
+            markers: true,
             start: "top 80%", 
             end: "top 1%",
             scrub: 0,
