@@ -17,7 +17,7 @@ const tl7 = gsap.timeline({
     end: "top 1%", 
     scrub: 0,
     // pin:true,
-    markers:true,
+    // markers:true,
     
     ease: "power2",
   },
@@ -37,7 +37,7 @@ const tl5 = gsap.timeline({
     end: "top 50%", 
     scrub: 0,
     // pin:true,
-    markers:true,
+    // markers:true,
     
     ease: "power2",
   },
@@ -55,7 +55,7 @@ const tl6 = gsap.timeline({
     end: "top 50%", 
     scrub: 0,
     // pin:true,
-    markers:true,
+    // markers:true,
     
     ease: "power2",
   },
