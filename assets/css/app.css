@@ -69,8 +69,9 @@ h3.side_head{
     height: 150px;
     /* margin-top: -115%; */
 }
+
 .hello{
-    min-height: 50vh;
+    min-height: 36vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,14 +108,18 @@ p{
 
 .h1__tag{
     opacity: 0;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     padding: 15px 0px;
     transition: 0.4s;
     text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 50px;
+    font-weight: bold;
     z-index: 111;
+}
+.h1__parent{
+    min-height: 50vh;
+    overflow: hidden;
 }
 .h1__tag.active{
     opacity: 1;
