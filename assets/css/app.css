@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Serif+Display&family=Monoton&family=Playfair+Display+SC&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=DM+Serif+Display&family=Monoton&family=Playfair+Display+SC&family=Poppins:wght@300;400;500&family=Raleway:wght@200&display=swap');
 body{
     overflow-x: hidden;
     color: white;
@@ -118,7 +118,8 @@ p{
     /* font-family: 'Amatic SC', cursive;; */
     /* font-family: 'DM Serif Display', serif; */
     /* font-family: 'Monoton', cursive; */
-    font-family: 'Playfair Display SC', serif;
+    /* font-family: 'Playfair Display SC', serif; */
+    font-family: 'Raleway', sans-serif;
     z-index: 111;
 }
 .h1__parent{
