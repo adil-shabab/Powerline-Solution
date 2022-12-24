@@ -23,7 +23,7 @@ body{
     width: 125px;
     left: 4%;
     top: 5%;
-    position: absolute;
+    position: fixed;
 }
 h1.main_head{
     text-align: center;
