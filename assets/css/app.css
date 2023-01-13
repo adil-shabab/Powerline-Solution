@@ -257,3 +257,19 @@ p{
     bottom: 20px;
     width: 100%;
 }
+
+
+.about__us{
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+.about__us h3{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.about__us p{
+    width: 85%;
+    margin: auto;
+    font-size: 18px !important;
+    text-align: center;
+}
