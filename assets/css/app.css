@@ -241,14 +241,14 @@ p{
     margin-bottom: 20px;
 }
 #offcanvasRight ul li a.active{
-    color: #25aae1;
+    color: #2e348e;
 }
 #offcanvasRight ul li a{
     color: black;
     text-decoration: none;
 }
 #offcanvasRight .sm__icons i{
-    color: #25aae1;
+    color: #2e348e;
     padding: 10px;
     font-size: 25px;
 }
