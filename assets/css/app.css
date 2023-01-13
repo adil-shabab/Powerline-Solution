@@ -224,3 +224,36 @@ p{
 
 
 
+#menu__bar{
+    position: absolute;
+    right: 60px;
+    top: 55px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#offcanvasRight ul{
+    margin-top: 65px;
+    padding: 0px;
+    padding-left: 15px;
+}
+#offcanvasRight ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+#offcanvasRight ul li a.active{
+    color: #25aae1;
+}
+#offcanvasRight ul li a{
+    color: black;
+    text-decoration: none;
+}
+#offcanvasRight .sm__icons i{
+    color: #25aae1;
+    padding: 10px;
+    font-size: 25px;
+}
+#offcanvasRight .sm__icons{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}

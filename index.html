@@ -8,9 +8,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/app.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <img style="width: 65px;" src="assets/img/logo.gif" alt="" class="img-fluid">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul>
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href=""></a>Contact Us</li>
+      </ul>
+      <div class="sm__icons d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -18,6 +45,7 @@
     <div class="panel_parent">
       <div class="bg_parent"></div>
       <img src="assets/img/logo.gif" alt="" class="logo">
+      <i id="menu__bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="fa-solid fa-bars"></i>
       <div class="container" style="padding-top: 85px;">
         <h1 class="main_head">Impeccable Commitment</h1>
         <p class="main_para">Since 2005 from inception, we have completed more than 240 projects across 4 countries, the majority which is hustle in nature</p>
