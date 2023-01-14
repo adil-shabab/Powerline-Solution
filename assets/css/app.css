@@ -259,17 +259,24 @@ p{
 }
 
 
+
+
+
 .about__us{
     margin-top: 55px;
     margin-bottom: 100px;
 }
 .about__us h3{
     font-size: 48px;
+    text-transform: uppercase;
     margin-bottom: 20px;
+    color: #c7c7c7;
 }
 .about__us p{
     width: 85%;
     margin: auto;
-    font-size: 18px !important;
+    font-weight: lighter;
+    font-size: 17px !important;
     text-align: center;
+    color: #bdbdbd;
 }
