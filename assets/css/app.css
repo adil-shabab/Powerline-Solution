@@ -225,7 +225,7 @@ p{
 
 
 #menu__bar{
-    position: absolute;
+    position: fixed;
     right: 60px;
     top: 55px;
     font-size: 30px;
