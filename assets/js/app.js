@@ -125,6 +125,64 @@ panel_two.forEach(box => {
 
 
 
+panels_one = gsap.utils.toArray('.panels')
+panels_two = gsap.utils.toArray('.second-panels')
+
+panels_one.forEach(box => {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: box,
+            // markers: true,
+            start: "top 70%", 
+            end: "top 1%", 
+            scrub: 0,
+            
+            ease: "power2",
+            stagger: {
+              each: 0.02,
+              from: "random"
+            }
+        }
+    })
+    
+
+    gsap.set(['.panels'], {opacity: 0, scale: 0.1, transformOrigin: '50% 50%'})
+    tl.to(box, { opacity: 1, x: 0, scale: 1.8})
+    tl.to(box, {duration: 0.5, scale: 1.8, opacity: .1})
+    
+})    
+
+
+panels_two.forEach(box => {
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: box,
+            // markers: true,
+            start: "top 70%", 
+            end: "top 1%",
+            scrub: 0,
+            
+            ease: "power2",
+            stagger: {
+              each: 0.02,
+              from: "random"
+            }
+        }
+    })
+    
+
+    gsap.set(['.panels'], {opacity: 0, scale: 0.1, transformOrigin: '50% 50%'})
+    tl.to(box, { opacity: 1, scale: 1.8, y: 0})
+    tl.to(box, {duration: 0.5, opacity: 0.1})
+})    
+
+
+
+
+
+
+
+
 
 
 
