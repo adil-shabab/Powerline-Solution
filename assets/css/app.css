@@ -69,6 +69,19 @@ h3.side_head{
     height: 150px;
     /* margin-top: -115%; */
 }
+.panels{
+    width: 200px;
+    opacity: 0;
+    scale: 0.1;
+    height: 150px;
+}
+.second-panels{
+    width: 200px;
+    opacity: 0;
+    scale: 0.1;
+    height: 150px;
+    float: right;
+}
 
 .hello{
     min-height: 36vh;
@@ -267,16 +280,16 @@ p{
     margin-bottom: 100px;
 }
 .about__us h3{
-    font-size: 48px;
+    font-size: 28px;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #c7c7c7;
 }
 .about__us p{
-    width: 85%;
+    width: 100%;
     margin: auto;
     font-weight: lighter;
-    font-size: 17px !important;
+    font-size: 14px !important;
     text-align: center;
     color: #bdbdbd;
 }

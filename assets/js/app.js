@@ -147,8 +147,8 @@ panels_one.forEach(box => {
     
 
     gsap.set(['.panels'], {opacity: 0, scale: 0.1, transformOrigin: '50% 50%'})
-    tl.to(box, { opacity: 1, x: 0, scale: 1.8})
-    tl.to(box, {duration: 0.5, scale: 1.8, opacity: .1})
+    tl.to(box, { opacity: 1, x: 125, scale: 1.3})
+    tl.to(box, {duration: 0.5, scale: 1.4, opacity: .1})
     
 })    
 
@@ -172,7 +172,7 @@ panels_two.forEach(box => {
     
 
     gsap.set(['.panels'], {opacity: 0, scale: 0.1, transformOrigin: '50% 50%'})
-    tl.to(box, { opacity: 1, scale: 1.8, y: 0})
+    tl.to(box, { opacity: 1, scale: 1.4, x: -100})
     tl.to(box, {duration: 0.5, opacity: 0.1})
 })    
 
