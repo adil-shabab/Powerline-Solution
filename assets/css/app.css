@@ -280,3 +280,44 @@ p{
     text-align: center;
     color: #bdbdbd;
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    #menu__bar{
+        right: 30px;
+        top: 28px;
+        font-size: 25px;
+    }
+}
+
+
+.mobile__section{
+    margin-top: 50px;
+}
+.mobile__section .box{
+    background: #01011e1c;
+    padding: 20px 10px;
+}
+.mobile__section .head__txt{
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.mobile__section .box .head__ing{
+    font-size: 24px;
+    font-weight: normal;
+}
+.mobile__section .box .para__txt{
+    font-size: 15px;
+    color: rgb(180, 180, 180);
+    margin-bottom: 0px;
+}
